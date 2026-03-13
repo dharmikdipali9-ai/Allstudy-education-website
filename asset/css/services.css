@@ -1,0 +1,212 @@
+/* services facilities css here */
+.services-section{
+padding:80px 0;
+}
+
+/* Card */
+
+.service-card{
+background:#fff;
+padding:40px 30px;
+border-radius:4px;
+border:1px solid #eeeeee;
+box-shadow:0 10px 30px rgba(0,0,0,0.08),0 10px 30px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
+height:100%;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,0.12),0 15px 40px rgba(0,0,0,0.12) ;
+}
+
+/* Icon */
+
+.service-icon{
+font-size:40px;
+color:#f5a100;
+margin-bottom:20px;
+}
+
+/* Title */
+
+.service-card h4{
+font-size:20px;
+font-weight:700;
+margin-bottom:15px;
+color:#111;
+}
+
+/* Text */
+
+.service-card p{
+font-size:14px;
+color:#777;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+/* Link */
+
+.service-card a{
+text-decoration:none;
+font-weight:600;
+font-size:14px;
+color:#000;
+}
+
+.service-card a:hover{
+color:#f5a100;
+}
+
+/* pricing section css here */
+.pricing-title{
+font-weight:700;
+color:#6a5acd;
+}
+
+.pricing-sub{
+color:#777;
+max-width:600px;
+margin:auto;
+}
+
+.pricing-card{
+background:white;
+border-radius:8px;
+text-align:center;
+padding-bottom:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.pricing-card:hover{
+transform:translateY(-8px);
+}
+
+.pricing-header{
+padding:25px;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+}
+
+.purple{
+background:#6a5acd;
+}
+
+.orange{
+background:#ffa500;
+}
+
+.pricing-list{
+list-style:none;
+padding:20px;
+margin:0;
+text-align:left;
+}
+
+.pricing-list li{
+padding:10px 0;
+border-bottom:1px solid #eee;
+font-size:15px;
+}
+
+.pricing-list i{
+margin-right:8px;
+}
+
+.bi-check-circle-fill{
+color:#6a5acd;
+}
+
+.bi-x-circle-fill{
+color:#aaa;
+}
+
+.purchase-btn{
+background:#6a5acd;
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:4px;
+margin-top:15px;
+}
+
+.orange-btn{
+background:#ffa500;
+}
+
+.purchase-btn:hover{
+opacity:0.9;
+color:white;
+background-color: #6a5acd;
+}
+
+
+/* ---------- Responsive ---------- */
+
+/* Tablet */
+/* services facilities css here */
+
+@media (max-width:992px){
+
+.services-section{
+padding:60px 0;
+}
+
+.service-card{
+padding:35px 25px;
+}
+
+.service-icon{
+font-size:35px;
+}
+
+.service-card h4{
+font-size:18px;
+}
+/* pricing section css here */
+.pricing-card{
+margin-bottom:20px;
+}
+}
+
+/* Very small screens */
+/* services facilities css here */
+
+@media (max-width:322px){
+
+.service-card{
+padding:25px 18px;
+}
+
+.service-icon{
+font-size:28px;
+}
+
+.service-card h4{
+font-size:16px;
+}
+
+.service-card p{
+font-size:12px;
+}
+/* pricing section css here */
+.pricing-header{
+flex-direction:column;
+gap:5px;
+font-size:18px;
+}
+
+.pricing-list li{
+font-size:13px;
+}
+
+.purchase-btn{
+width:90%;
+}
+}

@@ -1,0 +1,217 @@
+.top-bar {
+  background-color: orange;
+}
+/* ===========================
+   BREADCRUMB SECTION
+=========================== */
+
+.pageBreadcrumb {
+  background-image: url("../images/breadcrumbimg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.breadcrumbOverlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 90px 0;
+}
+
+.breadcrumbTitle {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.breadcrumbPath {
+  color: #fff;
+  font-size: 16px;
+}
+
+.breadcrumbPath a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumbPath a:hover {
+  text-decoration: underline;
+}
+/* facilities section css here */
+.facilities {
+  padding: 80px 0;
+  background-color: rgb(230, 233, 234);
+}
+
+.facility-card {
+  background: #fff;
+  padding: 40px 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.facility-card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 40px;
+  color: #f4a100;
+  margin-bottom: 20px;
+}
+
+.facility-card h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.facility-card p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.facility-card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  font-size: 14px;
+}
+
+.facility-card a:hover {
+  color: #f4a100;
+}
+/* university partner section css starts here */
+.partner-section {
+  background: #e9edf2;
+  padding: 90px 0;
+}
+
+/* Title */
+
+.partner-title {
+  color: #6b5bd2;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Description */
+
+.partner-desc {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+/* Logos */
+
+.partner-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.partner-logo {
+  max-width: 120px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  /* BREADCRUMB SECTION css starts here */
+
+  .breadcrumbOverlay {
+    padding: 70px 0;
+  }
+
+  .breadcrumbTitle {
+    font-size: 30px;
+  }
+  /* facilities section css here */
+  .facilities {
+    padding: 60px 0;
+  }
+
+  .facility-card {
+    padding: 35px 20px;
+  }
+  /* university partner section css starts here */
+  .partner-section{
+padding:70px 20px;
+}
+
+.partner-title{
+font-size:30px;
+}
+
+.partner-desc{
+font-size:14px;
+}
+
+.partner-logo{
+max-width:100px;
+}
+}
+
+@media (max-width: 322px) {
+  /* BREADCRUMB SECTION css starts here */
+
+  .breadcrumbOverlay {
+    padding: 50px 0;
+  }
+
+  .breadcrumbTitle {
+    font-size: 22px;
+  }
+
+  .breadcrumbPath {
+    font-size: 14px;
+  }
+
+  /* facilities section css here */
+  .facility-card {
+    padding: 25px 15px;
+  }
+
+  .facility-card h4 {
+    font-size: 18px;
+  }
+
+  .facility-card p {
+    font-size: 12px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+  /* university partner section css starts here */
+  .partner-title{
+font-size:22px;
+}
+
+.partner-desc{
+font-size:12px;
+}
+
+.partner-logo{
+max-width:80px;
+}
+
+.partner-logos{
+gap:30px;
+}
+}

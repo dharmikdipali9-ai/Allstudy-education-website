@@ -1,0 +1,1065 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TOP BAR css starts here */
+
+.top-bar {
+  background: #2e3b2f;
+  color: white;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.top-left span {
+  margin-right: 20px;
+}
+.phone a{
+  text-decoration: none;
+  color:#fff;
+}
+.top-right a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: orange;
+}
+
+/* NAV LINKS */
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+/* ICONS */
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: orange;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* hero carousel css starts here */
+/* HERO IMAGE */
+
+.hero-img {
+  height: 600px;
+  object-fit: cover;
+}
+
+/* CATEGORY BUTTON */
+
+.carousel-content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.category-btn {
+  background: #f4a300;
+  color: white;
+  padding: 12px 22px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* ARROWS */
+
+.custom-arrow {
+  width: 50px;
+  height: 50px;
+  background: #7a6fdc;
+  top: auto;
+  bottom: 30px;
+}
+
+.carousel-control-prev {
+  left: auto;
+  right: 110px;
+}
+
+.carousel-control-next {
+  right: 40px;
+}
+/* photoshop icon css here */
+.tool-card {
+  width: 120px;
+  /* background: #eee; */
+  padding: 15px;
+  text-align: center;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  margin: 5px auto;
+}
+
+.tool-icon {
+  width: 35px;
+  height: 35px;
+  background: #f4a300;
+  color: #222;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  border-radius: 3px;
+}
+
+.tool-card h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+/* search course css here */
+.course-search {
+  background: #e9edf3;
+  padding: 80px 0;
+}
+
+.top-text {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  color: #6a5acd;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.search-btn {
+  background: #6a5acd;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+}
+
+.search-btn:hover {
+  background: #5847c2;
+}
+
+.search-box {
+  max-width: 900px;
+  margin: auto;
+}
+/* popular online courses section css starts here */
+.courses-section {
+  background: #f5f6fa;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #6a5acd;
+}
+
+.section-text {
+  color: #666;
+}
+
+.course-card {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-img {
+  position: relative;
+}
+
+.course-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.price {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #f4a300;
+  color: white;
+  padding: 6px 12px;
+  font-weight: 600;
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #777;
+  margin: 8px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.stars {
+  color: #f4a300;
+}
+
+.view-btn {
+  background: #6a5acd;
+  color: white;
+  padding: 12px 25px;
+  font-weight: 600;
+  border: none;
+}
+
+.view-btn:hover {
+  background: #5847c2;
+}
+
+/* counter section css here */
+.counter-section {
+  position: relative;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+  background: url("../images/counterbg.png") no-repeat center center/cover;
+}
+/* Overlay for readability */
+.counter-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.counter-container {
+  position: relative;
+  z-index: 2;
+}
+.counter-box {
+  /* background: #333; */
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 15px 0;
+  transition: transform 0.3s ease;
+}
+.counter-box:hover {
+  transform: translateY(-8px);
+}
+.counter-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #f9d342;
+}
+.counter-number {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.counter-label {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+/* university gallery section CSS starts here */
+.gallery-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.gallery-heading {
+  margin-bottom: 20px;
+}
+.filter-btns {
+  margin-bottom: 30px;
+}
+.filter-btns .btn {
+  margin: 5px;
+}
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery-item {
+  flex: 1 1 calc(33.333% - 15px);
+  max-width: calc(33.333% - 15px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+/* Arrows */
+.gallery-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.gallery-nav button {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+.gallery-nav button:hover {
+  background: #4b42c2;
+}
+.universityHeading {
+  color: #6a5acd;
+  font-weight: 700;
+}
+.universityPara {
+  color: #666;
+}
+/* Teachers section css starts here */
+.teachers-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.teachers-section h2 {
+  color: #6a5acd;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+.teachers-section p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 16px;
+}
+.teacher-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.teacher-card:hover {
+  transform: translateY(-8px);
+}
+.teacher-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.teacher-info {
+  padding: 20px;
+}
+.teacher-info h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+.teacher-info span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 18px;
+  /* color: #6c63ff; */
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #333;
+}
+/* Testimonial section css starts here */
+/* SECTION BACKGROUND */
+
+.testimonial-section {
+  padding: 100px 0;
+  background: url("../images/backto.png") center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+/* DARK OVERLAY */
+
+.testimonial-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.testimonial-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* TESTIMONIAL */
+
+.testimonial-content {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 20px 0;
+  color: #ddd;
+}
+
+.testimonial-name {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.testimonial-role {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ARROWS */
+
+.arrow {
+  position: absolute;
+  top: 35px;
+  font-size: 28px;
+  color: #ffc107;
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 30%;
+}
+
+.arrow.right {
+  right: 30%;
+}
+
+/* University availabe section css here */
+.university-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  color: #6b6bbd;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #777;
+  font-size: 14px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+/* CONTACT INFO */
+
+.contact-box {
+  margin-bottom: 30px;
+}
+
+.contact-icon {
+  font-size: 22px;
+  color: #f4a622;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  color: #6b6bbd;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-text {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-text a {
+  color: #666;
+  text-decoration: none;
+}
+
+.contact-text a:hover {
+  color: #000;
+}
+
+/* MAP */
+
+.map-container iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+}
+/* Upcoming events section css starts here */
+#upcomingEventsBlock {
+  padding: 80px 0;
+}
+
+/* HEADING */
+
+.eventsHeading {
+  text-align: center;
+  color: #6a63c7;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.eventsParagraph {
+  text-align: center;
+  max-width: 620px;
+  margin: auto;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+/* CARD */
+
+.eventsCardBox {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.eventsCardBox:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+
+.eventsImageWrap {
+  position: relative;
+}
+
+.eventsImageWrap img {
+  width: 100%;
+  display: block;
+}
+
+/* DATE BADGE */
+
+.eventsDateBadge {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  background: #6a63c7;
+  color: white;
+  text-align: center;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.eventsDateBadge span {
+  display: block;
+  font-size: 12px;
+}
+
+/* BODY */
+
+.eventsContentArea {
+  padding: 35px 20px 20px;
+}
+
+.eventsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.eventsTime {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.eventsTime i {
+  color: #f39c12;
+  margin-right: 5px;
+}
+
+.eventsLocation {
+  font-size: 13px;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.eventsDescription {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.eventsJoinBtn {
+  background: #6a63c7;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+.eventsJoinBtn:hover {
+  background: #544edb;
+}
+
+/* Newsletter section css starts here */
+
+/* NEWSLETTER */
+
+.newsletter-area {
+  background: #f4a300;
+  padding: 35px 0;
+  color: white;
+}
+
+.newsletter-title {
+  font-weight: 700;
+}
+
+.newsletter-form input {
+  height: 45px;
+  border: none;
+  padding-left: 15px;
+}
+
+.newsletter-form button {
+  height: 45px;
+  background: white;
+  border: none;
+  color: #f4a300;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+/* FOOTER */
+
+.main-footer {
+  background: #6a5acd;
+  color: white;
+  padding: 70px 0;
+}
+
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.footer-contact li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-contact a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: white;
+}
+
+/* NEWS LIST */
+
+.news-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.news-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.news-date {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* TWITTER */
+
+.twitter-post {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.twitter-post i {
+  margin-right: 6px;
+}
+
+.twitter-time {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* RECENT PHOTOS */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 70px;
+  object-fit: cover;
+}
+
+/* COPYRIGHT */
+
+.copyright-bar {
+  background: #f5f5f5;
+  padding: 15px 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 8px;
+  color: white;
+}
+
+.fb {
+  background: #3b5998;
+}
+.insta {
+  background: #e1306c;
+}
+.google {
+  background: #db4437;
+}
+.twitter {
+  background: #1da1f2;
+}
+.youtube {
+  background: #ff0000;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  /* TOP BAR css starts here */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-icons {
+    display: none;
+    justify-content: center;
+  }
+  /* hero carousel css starts here */
+  .hero-img {
+    height: 450px;
+  }
+  /* search course css here */
+  .top-text {
+    font-size: 18px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+  /* popular online courses section css starts here */
+  .course-img img {
+    height: 180px;
+  }
+
+  /* counter section css here */
+  .counter-number {
+    font-size: 30px;
+  }
+  .counter-icon {
+    font-size: 35px;
+  }
+
+  /* university gallery section CSS starts here */
+  .gallery-item {
+    flex: 1 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+  /* Teachers section css starts here */
+  .teachers-section h2 {
+    font-size: 30px;
+  }
+  .teacher-info h5 {
+    font-size: 18px;
+  }
+  /* Testimonial section css starts here */
+  .testimonial-text {
+    font-size: 14px;
+  }
+
+  .arrow.left {
+    left: 20%;
+  }
+
+  .arrow.right {
+    right: 20%;
+  }
+
+  /* University availabe section css here */
+  .map-container {
+    margin-top: 40px;
+  }
+  /* Upcoming events section css starts here */
+  .eventsContentArea {
+    padding: 30px 18px;
+  }
+  /* Newsletter section css starts here */
+  .photo-grid img {
+    height: 60px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 322px) {
+  /* TOP BAR css starts here */
+  .top-left span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+  /* hero carousel css starts here */
+  .hero-img {
+    height: 320px;
+  }
+
+  .carousel-content {
+    left: 15px;
+    bottom: 20px;
+  }
+
+  .category-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .custom-arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .carousel-control-prev {
+    right: 80px;
+  }
+
+  .carousel-control-next {
+    right: 20px;
+  }
+  /* search course css here */
+  .top-text {
+    font-size: 14px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .course-search {
+    padding: 50px 10px;
+  }
+  /* popular online courses section css starts here */
+  .courses-section {
+    padding: 50px 10px;
+  }
+
+  .course-content h5 {
+    font-size: 16px;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .course-footer {
+    flex-direction: column;
+    gap: 5px;
+  }
+  /* counter section css here */
+  .counter-number {
+    font-size: 24px;
+  }
+  .counter-icon {
+    font-size: 28px;
+  }
+  .counter-label {
+    font-size: 14px;
+  }
+  /* university gallery section CSS starts here */
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  /* Teachers section css starts here */
+  .teachers-section h2 {
+    font-size: 24px;
+  }
+  .teachers-section p {
+    font-size: 14px;
+  }
+  .teacher-info h5 {
+    font-size: 16px;
+  }
+  .social-icons a {
+    font-size: 16px;
+  }
+  /* Testimonial section css starts here */
+  .testimonial-section {
+    padding: 60px 10px;
+  }
+
+  .testimonial-text {
+    font-size: 13px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+
+  .arrow.left {
+    left: 10%;
+  }
+
+  .arrow.right {
+    right: 10%;
+  }
+  /* University availabe section css here */
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+  }
+
+  .contact-title {
+    font-size: 16px;
+  }
+
+  .contact-text {
+    font-size: 13px;
+  }
+  /* Upcoming events section css starts here */
+  .eventsHeading {
+    font-size: 22px;
+  }
+
+  .eventsParagraph {
+    font-size: 13px;
+  }
+
+  .eventsTitle {
+    font-size: 16px;
+  }
+
+  .eventsDescription {
+    font-size: 13px;
+  }
+  /* Newsletter section css starts here */
+  .newsletter-title {
+    font-size: 20px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+}
