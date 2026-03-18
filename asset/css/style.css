@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 /* TOP BAR css starts here */
 
 .top-bar {
@@ -16,9 +18,9 @@
 .top-left span {
   margin-right: 20px;
 }
-.phone a{
+.phone a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
 .top-right a {
   color: white;
@@ -825,6 +827,9 @@
   background: #ff0000;
 }
 
+/* customised css starts here */
+/* customised css ends here */
+
 /* TABLET */
 
 @media (max-width: 992px) {
@@ -1062,4 +1067,128 @@
   .footer-text {
     font-size: 13px;
   }
+}
+
+
+
+
+/* customised css starts here */
+
+/* SOCIAL */
+.lp-social {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+.lp-social a {
+    padding: 12px;
+    color: #fff;
+}
+.lp-fb { background:#3b5998; }
+.lp-insta { background:#e4405f; }
+.lp-twitter { background:#000; }
+.lp-linkedin { background:#0077b5; }
+
+/* WHATSAPP */
+.lp-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* POPUP */
+.lp-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+}
+
+.lp-popup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 340px;
+    padding: 25px;
+    border-radius: 14px;
+    background: #fff;
+    text-align: center;
+    animation: lpFade 0.4s forwards;
+}
+
+@keyframes lpFade {
+    to { transform: translate(-50%, -50%) scale(1); }
+}
+
+/* INPUT */
+.lp-input {
+    position: relative;
+    margin: 10px 0;
+}
+.lp-input i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.lp-input input {
+    width: 100%;
+    padding: 12px 12px 12px 35px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.lp-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg,#ff5722,#ff9800);
+    color: white;
+}
+
+/* LOADER */
+.lp-loader {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: 3px solid #fff;
+    border-top: transparent;
+    border-radius: 50%;
+    animation: lpSpin 1s linear infinite;
+}
+
+@keyframes lpSpin {
+    100% { transform: rotate(360deg); }
+}
+
+/* VALIDATION */
+.lp-error { border-color:red !important; }
+.lp-success { border-color:green !important; }
+
+/* CLOSE */
+.lp-close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* SCROLL */
+#lp-scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }

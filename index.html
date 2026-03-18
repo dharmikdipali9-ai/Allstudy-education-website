@@ -1,89 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | AllStudy</title>
-    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!-- Line Icons -->
-    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
-    <link rel="stylesheet" href="./asset/css/style.css" />
-  </head>
-  <body>
-    <!-- Top Bar starts here -->
-    <div class="top-bar">
-      <div
-        class="container d-flex justify-content-between align-items-center flex-wrap"
-      >
-        <div class="top-left">
-          <span class="phone"
-            >📞 Phone : <a href="tel:8801923154259">8801 923 154 259</a></span
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | AllStudy</title>
+  <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Line Icons -->
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
-          <span class="d-none d-lg-inline"
-            >🕒 Opening Time : 9:30am–5:30pm</span
-          >
+  <link rel="stylesheet" href="./asset/css/style.css" />
 
-          <span class="d-none d-lg-inline"
-            >📍 Address : Labartisan 1205 Dhaka</span
-          >
+</head>
+
+<body>
+  <!-- customised section starts here -->
+  <!-- SOCIAL -->
+  <div class="lp-social">
+    <a href="https://www.facebook.com/" class="lp-fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/" class="lp-insta" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/" class="lp-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/" class="lp-linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/919356745404?text=Hello%20I%20want%20to%20know%20more" class="lp-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- POPUP -->
+  <div id="lp-popup" class="lp-popup">
+    <div class="lp-popup-box">
+
+      <span class="lp-close">&times;</span>
+
+      <h2>🎉 Get 20% Discount</h2>
+      <p>Fill details & we’ll contact you</p>
+
+      <form id="lp-form">
+
+        <div class="lp-input">
+          <i class="fas fa-user"></i>
+          <input type="text" id="lp-name" placeholder="Your Name">
         </div>
 
-        <div class="top-right">
-          <a href="#">Register</a>
-
-          <span>|</span>
-
-          <a href="#">Login</a>
+        <div class="lp-input">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="lp-email" placeholder="Your Email">
         </div>
-      </div>
-    </div>
-    <!-- Top Bar ends here -->
-    <!-- NAVBAR starts here-->
+        <div class="lp-input">
+          <i class="fas fa-phone"></i>
+          <input type="text" id="lp-phone" placeholder="Your Phone">
+        </div>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
-        <!-- LOGO -->
-
-        <a class="navbar-brand logo" href="#">ALL <span>STUDY</span></a>
-
-        <!-- TOGGLER -->
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#mobileMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <button type="submit" class="lp-btn">
+          <span id="lp-btnText">Get Offer</span>
+          <span id="lp-loader" class="lp-loader"></span>
         </button>
 
-        <!-- OFFCANVAS MENU -->
+      </form>
 
-        <div class="offcanvas offcanvas-end" id="mobileMenu">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title"><a class="navbar-brand logo" href="#">ALL <span>STUDY</span></a></h5>
+      <p id="lp-msg"></p>
 
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-            ></button>
-          </div>
+    </div>
+  </div>
 
-          <div class="offcanvas-body">
-            <ul class="navbar-nav mx-auto">
-              <!-- <li class="nav-item dropdown">
+  <button id="lp-scrollTop">↑</button>
+  <!-- customised section ends here -->
+
+  <!-- Top Bar starts here -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="top-left">
+        <span class="phone">📞 Phone : <a href="tel:8801923154259">8801 923 154 259</a></span>
+
+        <span class="d-none d-lg-inline">🕒 Opening Time : 9:30am–5:30pm</span>
+
+        <span class="d-none d-lg-inline">📍 Address : Labartisan 1205 Dhaka</span>
+      </div>
+
+      <div class="top-right">
+        <a href="#">Register</a>
+
+        <span>|</span>
+
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+  <!-- Top Bar ends here -->
+  <!-- NAVBAR starts here-->
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <!-- LOGO -->
+
+      <a class="navbar-brand logo" href="#">ALL <span>STUDY</span></a>
+
+      <!-- TOGGLER -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- OFFCANVAS MENU -->
+
+      <div class="offcanvas offcanvas-end" id="mobileMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title"><a class="navbar-brand logo" href="#">ALL <span>STUDY</span></a></h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto">
+            <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="./index.html"
@@ -110,977 +144,930 @@
                 >
               </li> -->
 
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./services.html">Services</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./gallery.html">Gallery</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
 
-            <div class="nav-icons">
-              <span class="search">🔍</span>
+          <div class="nav-icons">
+            <span class="search">🔍</span>
 
-              <span class="cart">
-                🛒
+            <span class="cart">
+              🛒
 
-                <span class="cart-badge">4</span>
-              </span>
+              <span class="cart-badge">4</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR starts here-->
+  <!-- Hero Carousel starts here -->
+  <section class="hero-carousel">
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="./asset/images/carouseimage.jpg" class="d-block w-100 hero-img" />
+
+          <div class="carousel-content">
+            <a href="#" class="category-btn">Our Categories</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="./asset/images/carouseimage.jpg" class="d-block w-100 hero-img" />
+
+          <div class="carousel-content">
+            <a href="#" class="category-btn">Our Categories</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous -->
+      <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#heroSlider"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <!-- Next -->
+      <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#heroSlider"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+  <!-- Hero Carousel ends here -->
+  <!-- Photoshop icon starts here -->
+  <div class="tool-card">
+    <div class="tool-icon">Ps</div>
+    <h4>Photoshop</h4>
+  </div>
+  <!-- Photoshop icon ends here -->
+  <!-- Search Course starts here -->
+
+  <section class="course-search">
+    <div class="container text-center">
+      <p class="top-text">
+        Total 25,000+ Students Trust us Worldwide. Get Free Online Courses
+        Tips
+      </p>
+
+      <h2 class="main-title">Start Online Learning Today</h2>
+
+      <div class="row justify-content-center search-box">
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
+          <select id="category" class="form-select">
+            <option value="">All Categories</option>
+            <option>Design</option>
+            <option>Development</option>
+            <option>Marketing</option>
+            <option>Business</option>
+          </select>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
+          <select id="level" class="form-select">
+            <option value="">Course Level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-3">
+          <input type="text" id="keyword" class="form-control" placeholder="Course Keyword..." />
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-12 mb-3">
+          <button class="btn search-btn w-100" onclick="searchCourse()">
+            Search Courses
+          </button>
+        </div>
+      </div>
+
+      <div id="result" class="mt-3"></div>
+    </div>
+  </section>
+  <!-- Search Course ends here -->
+  <!-- popular online courses section starts here -->
+  <section class="courses-section">
+    <div class="container">
+      <!-- HEADING -->
+      <div class="text-center mb-5">
+        <h2 class="section-title">Popular Online Courses</h2>
+
+        <p class="section-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- CARD 1 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="course-card">
+            <div class="course-img">
+              <img src="./asset/images/card-1.jpg" class="img-fluid" />
+
+              <span class="price">$200</span>
+            </div>
+
+            <div class="course-content">
+              <h5>Uficiently Dsenate Colabor</h5>
+
+              <div class="meta">
+                <span>👤 Robot Smith</span>
+                <span>📅 24 April 2017</span>
+              </div>
+
+              <p>
+                Collaboratively enable niche markets completely through
+                forward functionalities.
+              </p>
+
+              <div class="course-footer">
+                <span>👁 730</span>
+                <span>💬 350</span>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="course-card">
+            <div class="course-img">
+              <img src="./asset/images/card-2.png" class="img-fluid" />
+
+              <span class="price">FREE</span>
+            </div>
+
+            <div class="course-content">
+              <h5>Awesome Solutions a Study</h5>
+
+              <div class="meta">
+                <span>👤 Robot Smith</span>
+                <span>📅 24 April 2017</span>
+              </div>
+
+              <p>
+                Collaboratively enable niche markets completely through
+                forward functionalities.
+              </p>
+
+              <div class="course-footer">
+                <span>👁 730</span>
+                <span>💬 350</span>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="course-card">
+            <div class="course-img">
+              <img src="./asset/images/card-3.png" class="img-fluid" />
+
+              <span class="price">$550</span>
+            </div>
+
+            <div class="course-content">
+              <h5>Disenatre Are Colaborative</h5>
+
+              <div class="meta">
+                <span>👤 Robot Smith</span>
+                <span>📅 24 April 2017</span>
+              </div>
+
+              <p>
+                Collaboratively enable niche markets completely through
+                forward functionalities.
+              </p>
+
+              <div class="course-footer">
+                <span>👁 730</span>
+                <span>💬 350</span>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="course-card">
+            <div class="course-img">
+              <img src="./asset/images/card-1.jpg" class="img-fluid" />
+
+              <span class="price">$500</span>
+            </div>
+
+            <div class="course-content">
+              <h5>Uficiently Dsenate Colabor</h5>
+
+              <div class="meta">
+                <span>👤 Robot Smith</span>
+                <span>📅 24 April 2017</span>
+              </div>
+
+              <p>
+                Collaboratively enable niche markets completely through
+                forward functionalities.
+              </p>
+
+              <div class="course-footer">
+                <span>👁 730</span>
+                <span>💬 350</span>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="course-card">
+            <div class="course-img">
+              <img src="./asset/images/card-2.png" class="img-fluid" />
+
+              <span class="price">$250</span>
+            </div>
+
+            <div class="course-content">
+              <h5>Awesome Solutions a Study</h5>
+
+              <div class="meta">
+                <span>👤 Robot Smith</span>
+                <span>📅 24 April 2017</span>
+              </div>
+
+              <p>
+                Collaboratively enable niche markets completely through
+                forward functionalities.
+              </p>
+
+              <div class="course-footer">
+                <span>👁 730</span>
+                <span>💬 350</span>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="course-card">
+            <div class="course-img">
+              <img src="./asset/images/card-3.png" class="img-fluid" />
+
+              <span class="price">$700</span>
+            </div>
+
+            <div class="course-content">
+              <h5>Disenatre Are Colaborative</h5>
+
+              <div class="meta">
+                <span>👤 Robot Smith</span>
+                <span>📅 24 April 2017</span>
+              </div>
+
+              <p>
+                Collaboratively enable niche markets completely through
+                forward functionalities.
+              </p>
+
+              <div class="course-footer">
+                <span>👁 730</span>
+                <span>💬 350</span>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW ALL BUTTON -->
+
+        <div class="text-center mt-5">
+          <button class="btn view-btn" onclick="viewCourses()">
+            View All Courses
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- popular online courses section ends here -->
+  <!-- counter section starts here -->
+
+  <section class="counter-section">
+    <div class="container counter-container">
+      <div class="row">
+        <!-- Students Enrolled -->
+        <div class="col-md-3 col-6">
+          <div class="counter-box">
+            <div class="counter-icon">
+              <i class="bi bi-person"></i>
+            </div>
+            <div class="counter-number" data-target="2500">0</div>
+            <div class="counter-label">Students Enrolled</div>
+          </div>
+        </div>
+        <!-- Awards Won -->
+        <div class="col-md-3 col-6">
+          <div class="counter-box">
+            <div class="counter-icon"><i class="bi bi-trophy"></i></div>
+            <div class="counter-number" data-target="912">0</div>
+            <div class="counter-label">Best Awards Won</div>
+          </div>
+        </div>
+        <!-- Classes Completed -->
+        <div class="col-md-3 col-6">
+          <div class="counter-box">
+            <div class="counter-icon">
+              <i class="bi bi-pencil-square"></i>
+            </div>
+            <div class="counter-number" data-target="370">0</div>
+            <div class="counter-label">Classes Completed</div>
+          </div>
+        </div>
+        <!-- Total Courses -->
+        <div class="col-md-3 col-6">
+          <div class="counter-box">
+            <div class="counter-icon"><i class="bi bi-sun"></i></div>
+            <div class="counter-number" data-target="648">0</div>
+            <div class="counter-label">Our Total Courses</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- counter section ends here -->
+  <!-- university gallery section starts here -->
+  <section class="gallery-section">
+    <div class="container">
+      <!-- Heading -->
+      <div class="gallery-heading">
+        <h2 class="universityHeading">Our University Gallery</h2>
+        <p class="universityPara">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea illo
+          officiis, deserunt ab dicta tempore neque aut praesentium.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btns">
+        <button class="btn btn-warning filter-btn" data-filter="all">
+          Show All
+        </button>
+        <button class="btn btn-outline-dark filter-btn" data-filter="branding">
+          Branding
+        </button>
+        <button class="btn btn-outline-dark filter-btn" data-filter="development">
+          Development
+        </button>
+        <button class="btn btn-outline-dark filter-btn" data-filter="packing">
+          Packing
+        </button>
+        <button class="btn btn-outline-dark filter-btn" data-filter="photography">
+          Photography
+        </button>
+      </div>
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Example items -->
+        <div class="gallery-item" data-category="branding">
+          <img src="./asset/images/gallery-5.jpg" alt="" />
+        </div>
+        <div class="gallery-item" data-category="development">
+          <img src="./asset/images/gallery-4.jpg" alt="" />
+        </div>
+        <div class="gallery-item" data-category="packing">
+          <img src="./asset/images/gallery-3.jpg" alt="" />
+        </div>
+        <div class="gallery-item" data-category="photography">
+          <img src="./asset/images/gallery-2.jpg" alt="" />
+        </div>
+        <div class="gallery-item" data-category="branding">
+          <img src="./asset/images/gallery-1.jpg" alt="" />
+        </div>
+        <div class="gallery-item" data-category="development">
+          <img src="./asset/images/gallery-6.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="mt-4">
+        <button class="btn btn-primary" id="viewMoreBtn">
+          View More Gallery
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- university gallery section ends here -->
+  <!-- Teachers section starts here -->
+  <section class="teachers-section">
+    <div class="container">
+      <!-- Heading -->
+      <h2>Meet Our Teachers</h2>
+      <p>
+        Rapidiously expedite granular imperatives before economically sound
+        web services. Credibly actualize pandemic strategic themeplatform.
+      </p>
+
+      <!-- Teacher Cards -->
+      <div class="row g-4">
+        <!-- Teacher 1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="teacher-card">
+            <img src="./asset/images/robot.png" alt="Robot Jhonson" />
+            <div class="teacher-info">
+              <h5>Robot Jhonson</h5>
+              <span>Math Teacher</span>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-vimeo"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-rss"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Teacher 2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="teacher-card">
+            <img src="./asset/images/janaton.jpg" alt="Janaton Doe" />
+            <div class="teacher-info">
+              <h5>Janaton Doe</h5>
+              <span>English Teacher</span>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-vimeo"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-rss"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Teacher 3 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="teacher-card">
+            <img src="./asset/images/alex.png" alt="Alex Jhonson" />
+            <div class="teacher-info">
+              <h5>Alex Jhonson</h5>
+              <span>Art Teacher</span>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-vimeo"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-rss"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- NAVBAR starts here-->
-    <!-- Hero Carousel starts here -->
-    <section class="hero-carousel">
-      <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+    </div>
+  </section>
+  <!-- Teachers section ends here -->
+  <!-- Testimonial section starts here -->
+  <section class="testimonial-section text-center">
+    <div class="container">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <!-- Slide 1 -->
+          <!-- ITEM 1 -->
           <div class="carousel-item active">
-            <img
-              src="./asset/images/carouseimage.jpg"
-              class="d-block w-100 hero-img"
-            />
+            <div class="testimonial-content">
+              <div class="arrow left" onclick="prevSlide()">&#171;</div>
 
-            <div class="carousel-content">
-              <a href="#" class="category-btn">Our Categories</a>
+              <img src="./asset/images/testimonialimg.jpg" class="testimonial-img" />
+
+              <div class="arrow right" onclick="nextSlide()">&#187;</div>
+
+              <p class="testimonial-text">
+                Authoritatively facilitate client and aentric opportunities
+                after state of the leadership and conveniently and productive
+                frictionless products revolutionary through revolutionary.
+              </p>
+
+              <h5 class="testimonial-name">Robot Johnson</h5>
+              <span class="testimonial-role">Student 1st Year</span>
             </div>
           </div>
 
-          <!-- Slide 2 -->
+          <!-- ITEM 2 -->
           <div class="carousel-item">
-            <img
-              src="./asset/images/carouseimage.jpg"
-              class="d-block w-100 hero-img"
-            />
+            <div class="testimonial-content">
+              <div class="arrow left" onclick="prevSlide()">&#171;</div>
 
-            <div class="carousel-content">
-              <a href="#" class="category-btn">Our Categories</a>
-            </div>
-          </div>
-        </div>
+              <img src="./asset/images/testimonialimg.jpg" class="testimonial-img" />
 
-        <!-- Previous -->
-        <button
-          class="carousel-control-prev custom-arrow"
-          type="button"
-          data-bs-target="#heroSlider"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
+              <div class="arrow right" onclick="nextSlide()">&#187;</div>
 
-        <!-- Next -->
-        <button
-          class="carousel-control-next custom-arrow"
-          type="button"
-          data-bs-target="#heroSlider"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </section>
-    <!-- Hero Carousel ends here -->
-    <!-- Photoshop icon starts here -->
-    <div class="tool-card">
-      <div class="tool-icon">Ps</div>
-      <h4>Photoshop</h4>
-    </div>
-    <!-- Photoshop icon ends here -->
-    <!-- Search Course starts here -->
+              <p class="testimonial-text">
+                Completely drive innovative growth strategies through
+                interactive communities. Energistically leverage collaborative
+                technologies.
+              </p>
 
-    <section class="course-search">
-      <div class="container text-center">
-        <p class="top-text">
-          Total 25,000+ Students Trust us Worldwide. Get Free Online Courses
-          Tips
-        </p>
-
-        <h2 class="main-title">Start Online Learning Today</h2>
-
-        <div class="row justify-content-center search-box">
-          <div class="col-lg-3 col-md-6 col-12 mb-3">
-            <select id="category" class="form-select">
-              <option value="">All Categories</option>
-              <option>Design</option>
-              <option>Development</option>
-              <option>Marketing</option>
-              <option>Business</option>
-            </select>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-12 mb-3">
-            <select id="level" class="form-select">
-              <option value="">Course Level</option>
-              <option>Beginner</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </select>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3">
-            <input
-              type="text"
-              id="keyword"
-              class="form-control"
-              placeholder="Course Keyword..."
-            />
-          </div>
-
-          <div class="col-lg-2 col-md-6 col-12 mb-3">
-            <button class="btn search-btn w-100" onclick="searchCourse()">
-              Search Courses
-            </button>
-          </div>
-        </div>
-
-        <div id="result" class="mt-3"></div>
-      </div>
-    </section>
-    <!-- Search Course ends here -->
-    <!-- popular online courses section starts here -->
-    <section class="courses-section">
-      <div class="container">
-        <!-- HEADING -->
-        <div class="text-center mb-5">
-          <h2 class="section-title">Popular Online Courses</h2>
-
-          <p class="section-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <!-- CARD 1 -->
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="course-card">
-              <div class="course-img">
-                <img src="./asset/images/card-1.jpg" class="img-fluid" />
-
-                <span class="price">$200</span>
-              </div>
-
-              <div class="course-content">
-                <h5>Uficiently Dsenate Colabor</h5>
-
-                <div class="meta">
-                  <span>👤 Robot Smith</span>
-                  <span>📅 24 April 2017</span>
-                </div>
-
-                <p>
-                  Collaboratively enable niche markets completely through
-                  forward functionalities.
-                </p>
-
-                <div class="course-footer">
-                  <span>👁 730</span>
-                  <span>💬 350</span>
-
-                  <div class="stars">★★★★★</div>
-                </div>
-              </div>
+              <h5 class="testimonial-name">Sarah Smith</h5>
+              <span class="testimonial-role">Designer</span>
             </div>
           </div>
 
-          <!-- CARD 2 -->
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="course-card">
-              <div class="course-img">
-                <img src="./asset/images/card-2.png" class="img-fluid" />
+          <!-- ITEM 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-content">
+              <div class="arrow left" onclick="prevSlide()">&#171;</div>
 
-                <span class="price">FREE</span>
-              </div>
+              <img src="./asset/images/testimonialimg.jpg" class="testimonial-img" />
 
-              <div class="course-content">
-                <h5>Awesome Solutions a Study</h5>
+              <div class="arrow right" onclick="nextSlide()">&#187;</div>
 
-                <div class="meta">
-                  <span>👤 Robot Smith</span>
-                  <span>📅 24 April 2017</span>
-                </div>
+              <p class="testimonial-text">
+                Quickly build professional solutions through scalable systems
+                and efficient leadership strategies.
+              </p>
 
-                <p>
-                  Collaboratively enable niche markets completely through
-                  forward functionalities.
-                </p>
-
-                <div class="course-footer">
-                  <span>👁 730</span>
-                  <span>💬 350</span>
-
-                  <div class="stars">★★★★★</div>
-                </div>
-              </div>
+              <h5 class="testimonial-name">Michael Lee</h5>
+              <span class="testimonial-role">Developer</span>
             </div>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="course-card">
-              <div class="course-img">
-                <img src="./asset/images/card-3.png" class="img-fluid" />
-
-                <span class="price">$550</span>
-              </div>
-
-              <div class="course-content">
-                <h5>Disenatre Are Colaborative</h5>
-
-                <div class="meta">
-                  <span>👤 Robot Smith</span>
-                  <span>📅 24 April 2017</span>
-                </div>
-
-                <p>
-                  Collaboratively enable niche markets completely through
-                  forward functionalities.
-                </p>
-
-                <div class="course-footer">
-                  <span>👁 730</span>
-                  <span>💬 350</span>
-
-                  <div class="stars">★★★★★</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 1 -->
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="course-card">
-              <div class="course-img">
-                <img src="./asset/images/card-1.jpg" class="img-fluid" />
-
-                <span class="price">$500</span>
-              </div>
-
-              <div class="course-content">
-                <h5>Uficiently Dsenate Colabor</h5>
-
-                <div class="meta">
-                  <span>👤 Robot Smith</span>
-                  <span>📅 24 April 2017</span>
-                </div>
-
-                <p>
-                  Collaboratively enable niche markets completely through
-                  forward functionalities.
-                </p>
-
-                <div class="course-footer">
-                  <span>👁 730</span>
-                  <span>💬 350</span>
-
-                  <div class="stars">★★★★★</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="course-card">
-              <div class="course-img">
-                <img src="./asset/images/card-2.png" class="img-fluid" />
-
-                <span class="price">$250</span>
-              </div>
-
-              <div class="course-content">
-                <h5>Awesome Solutions a Study</h5>
-
-                <div class="meta">
-                  <span>👤 Robot Smith</span>
-                  <span>📅 24 April 2017</span>
-                </div>
-
-                <p>
-                  Collaboratively enable niche markets completely through
-                  forward functionalities.
-                </p>
-
-                <div class="course-footer">
-                  <span>👁 730</span>
-                  <span>💬 350</span>
-
-                  <div class="stars">★★★★★</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="course-card">
-              <div class="course-img">
-                <img src="./asset/images/card-3.png" class="img-fluid" />
-
-                <span class="price">$700</span>
-              </div>
-
-              <div class="course-content">
-                <h5>Disenatre Are Colaborative</h5>
-
-                <div class="meta">
-                  <span>👤 Robot Smith</span>
-                  <span>📅 24 April 2017</span>
-                </div>
-
-                <p>
-                  Collaboratively enable niche markets completely through
-                  forward functionalities.
-                </p>
-
-                <div class="course-footer">
-                  <span>👁 730</span>
-                  <span>💬 350</span>
-
-                  <div class="stars">★★★★★</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- VIEW ALL BUTTON -->
-
-          <div class="text-center mt-5">
-            <button class="btn view-btn" onclick="viewCourses()">
-              View All Courses
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- popular online courses section ends here -->
-    <!-- counter section starts here -->
-
-    <section class="counter-section">
-      <div class="container counter-container">
-        <div class="row">
-          <!-- Students Enrolled -->
-          <div class="col-md-3 col-6">
-            <div class="counter-box">
-              <div class="counter-icon">
-                <i class="bi bi-person"></i>
-              </div>
-              <div class="counter-number" data-target="2500">0</div>
-              <div class="counter-label">Students Enrolled</div>
-            </div>
-          </div>
-          <!-- Awards Won -->
-          <div class="col-md-3 col-6">
-            <div class="counter-box">
-              <div class="counter-icon"><i class="bi bi-trophy"></i></div>
-              <div class="counter-number" data-target="912">0</div>
-              <div class="counter-label">Best Awards Won</div>
-            </div>
-          </div>
-          <!-- Classes Completed -->
-          <div class="col-md-3 col-6">
-            <div class="counter-box">
-              <div class="counter-icon">
-                <i class="bi bi-pencil-square"></i>
-              </div>
-              <div class="counter-number" data-target="370">0</div>
-              <div class="counter-label">Classes Completed</div>
-            </div>
-          </div>
-          <!-- Total Courses -->
-          <div class="col-md-3 col-6">
-            <div class="counter-box">
-              <div class="counter-icon"><i class="bi bi-sun"></i></div>
-              <div class="counter-number" data-target="648">0</div>
-              <div class="counter-label">Our Total Courses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- counter section ends here -->
-    <!-- university gallery section starts here -->
-    <section class="gallery-section">
-      <div class="container">
-        <!-- Heading -->
-        <div class="gallery-heading">
-          <h2 class="universityHeading">Our University Gallery</h2>
-          <p class="universityPara">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea illo
-            officiis, deserunt ab dicta tempore neque aut praesentium.
-          </p>
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="filter-btns">
-          <button class="btn btn-warning filter-btn" data-filter="all">
-            Show All
-          </button>
-          <button
-            class="btn btn-outline-dark filter-btn"
-            data-filter="branding"
-          >
-            Branding
-          </button>
-          <button
-            class="btn btn-outline-dark filter-btn"
-            data-filter="development"
-          >
-            Development
-          </button>
-          <button class="btn btn-outline-dark filter-btn" data-filter="packing">
-            Packing
-          </button>
-          <button
-            class="btn btn-outline-dark filter-btn"
-            data-filter="photography"
-          >
-            Photography
-          </button>
-        </div>
-        <!-- Gallery Grid -->
-        <div class="gallery-grid" id="galleryGrid">
-          <!-- Example items -->
-          <div class="gallery-item" data-category="branding">
-            <img src="./asset/images/gallery-5.jpg" alt="" />
-          </div>
-          <div class="gallery-item" data-category="development">
-            <img src="./asset/images/gallery-4.jpg" alt="" />
-          </div>
-          <div class="gallery-item" data-category="packing">
-            <img src="./asset/images/gallery-3.jpg" alt="" />
-          </div>
-          <div class="gallery-item" data-category="photography">
-            <img src="./asset/images/gallery-2.jpg" alt="" />
-          </div>
-          <div class="gallery-item" data-category="branding">
-            <img src="./asset/images/gallery-1.jpg" alt="" />
-          </div>
-          <div class="gallery-item" data-category="development">
-            <img src="./asset/images/gallery-6.jpg" alt="" />
-          </div>
-        </div>
-
-        <!-- View More Button -->
-        <div class="mt-4">
-          <button class="btn btn-primary" id="viewMoreBtn">
-            View More Gallery
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- university gallery section ends here -->
-    <!-- Teachers section starts here -->
-    <section class="teachers-section">
-      <div class="container">
-        <!-- Heading -->
-        <h2>Meet Our Teachers</h2>
-        <p>
-          Rapidiously expedite granular imperatives before economically sound
-          web services. Credibly actualize pandemic strategic themeplatform.
-        </p>
-
-        <!-- Teacher Cards -->
-        <div class="row g-4">
-          <!-- Teacher 1 -->
-          <div class="col-md-4 col-sm-6">
-            <div class="teacher-card">
-              <img src="./asset/images/robot.png" alt="Robot Jhonson" />
-              <div class="teacher-info">
-                <h5>Robot Jhonson</h5>
-                <span>Math Teacher</span>
-                <div class="social-icons">
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-vimeo"></i></a>
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-pinterest"></i></a>
-                  <a href="#"><i class="bi bi-rss"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Teacher 2 -->
-          <div class="col-md-4 col-sm-6">
-            <div class="teacher-card">
-              <img src="./asset/images/janaton.jpg" alt="Janaton Doe" />
-              <div class="teacher-info">
-                <h5>Janaton Doe</h5>
-                <span>English Teacher</span>
-                <div class="social-icons">
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-vimeo"></i></a>
-                  <a href="#"><i class="bi bi-pinterest"></i></a>
-                  <a href="#"><i class="bi bi-rss"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Teacher 3 -->
-          <div class="col-md-4 col-sm-6">
-            <div class="teacher-card">
-              <img src="./asset/images/alex.png" alt="Alex Jhonson" />
-              <div class="teacher-info">
-                <h5>Alex Jhonson</h5>
-                <span>Art Teacher</span>
-                <div class="social-icons">
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-vimeo"></i></a>
-                  <a href="#"><i class="bi bi-pinterest"></i></a>
-                  <a href="#"><i class="bi bi-rss"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Teachers section ends here -->
-    <!-- Testimonial section starts here -->
-    <section class="testimonial-section text-center">
-      <div class="container">
-        <div
-          id="testimonialCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <!-- ITEM 1 -->
-            <div class="carousel-item active">
-              <div class="testimonial-content">
-                <div class="arrow left" onclick="prevSlide()">&#171;</div>
-
-                <img
-                  src="./asset/images/testimonialimg.jpg"
-                  class="testimonial-img"
-                />
-
-                <div class="arrow right" onclick="nextSlide()">&#187;</div>
-
-                <p class="testimonial-text">
-                  Authoritatively facilitate client and aentric opportunities
-                  after state of the leadership and conveniently and productive
-                  frictionless products revolutionary through revolutionary.
-                </p>
-
-                <h5 class="testimonial-name">Robot Johnson</h5>
-                <span class="testimonial-role">Student 1st Year</span>
-              </div>
-            </div>
-
-            <!-- ITEM 2 -->
-            <div class="carousel-item">
-              <div class="testimonial-content">
-                <div class="arrow left" onclick="prevSlide()">&#171;</div>
-
-                <img
-                  src="./asset/images/testimonialimg.jpg"
-                  class="testimonial-img"
-                />
-
-                <div class="arrow right" onclick="nextSlide()">&#187;</div>
-
-                <p class="testimonial-text">
-                  Completely drive innovative growth strategies through
-                  interactive communities. Energistically leverage collaborative
-                  technologies.
-                </p>
-
-                <h5 class="testimonial-name">Sarah Smith</h5>
-                <span class="testimonial-role">Designer</span>
-              </div>
-            </div>
-
-            <!-- ITEM 3 -->
-            <div class="carousel-item">
-              <div class="testimonial-content">
-                <div class="arrow left" onclick="prevSlide()">&#171;</div>
-
-                <img
-                  src="./asset/images/testimonialimg.jpg"
-                  class="testimonial-img"
-                />
-
-                <div class="arrow right" onclick="nextSlide()">&#187;</div>
-
-                <p class="testimonial-text">
-                  Quickly build professional solutions through scalable systems
-                  and efficient leadership strategies.
-                </p>
-
-                <h5 class="testimonial-name">Michael Lee</h5>
-                <span class="testimonial-role">Developer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonial section ends here -->
-    <!-- University available section starts here -->
-    <section class="university-section text-center">
-      <div class="container">
-        <h2 class="section-title">University Available 24 /7</h2>
-
-        <p class="section-subtitle">
-          Rapidiously expedite granular imperatives before economically sound
-          web services. Credibly actualize pandemic strategic themplatform.
-        </p>
-
-        <div class="row align-items-center">
-          <!-- LEFT CONTACT INFO -->
-
-          <div class="col-lg-6">
-            <div class="row text-start">
-              <div class="col-md-6 contact-box">
-                <i class="fa-solid fa-location-dot contact-icon"></i>
-                <h5 class="contact-title">Address:</h5>
-                <p class="contact-text">
-                  170/a Road 124, Sahara Melbourn<br />
-                  New Sonarbangla Road Australia
-                </p>
-              </div>
-
-              <div class="col-md-6 contact-box">
-                <i class="fa-solid fa-envelope contact-icon"></i>
-                <h5 class="contact-title">Email:</h5>
-                <p class="contact-text">
-                  <a href="mailto:yourmail@domain.com">yourmail@domain.com</a
-                  ><br />
-                  <a href="mailto:houserent@domain.com">houserent@domain.com</a>
-                </p>
-              </div>
-
-              <div class="col-md-6 contact-box">
-                <i class="fa-solid fa-phone contact-icon"></i>
-                <h5 class="contact-title">Phone:</h5>
-                <p class="contact-text">
-                  <a href="tel:990215469875">+99 0215469875</a><br />
-                  <a href="tel:66635874692050">666 35874692050</a>
-                </p>
-              </div>
-
-              <div class="col-md-6 contact-box">
-                <i class="fa-solid fa-fax contact-icon"></i>
-                <h5 class="contact-title">Office Fax:</h5>
-                <p class="contact-text">
-                  +555.123.333 456<br />
-                  +555.123.333 456
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT MAP -->
-
-          <div class="col-lg-6">
-            <div class="map-container">
-              <iframe
-                src="https://maps.google.com/maps?q=glasgow&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              >
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- University availabe section ends here -->
-
-    <!-- Upcoming Events section starts here -->
-    <section id="upcomingEventsBlock">
-      <div class="container">
-        <h2 class="eventsHeading">Our Upcoming Events</h2>
-
-        <p class="eventsParagraph">
-          Rapidiously expedite granular imperatives before economically sound
-          web services. Credibly actualize pandemic strategic themplatform.
-        </p>
-
-        <div class="row g-4">
-          <!-- CARD 1 -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="eventsCardBox">
-              <div class="eventsImageWrap">
-                <img src="./asset/images/card-1.jpg" />
-
-                <div class="eventsDateBadge">
-                  24
-                  <span>March</span>
-                </div>
-              </div>
-
-              <div class="eventsContentArea">
-                <h5 class="eventsTitle">Study Fastivel Event 2018</h5>
-
-                <div class="eventsTime">
-                  <i class="fa-regular fa-clock"></i>
-                  08:00 am - 10:00 am
-                </div>
-
-                <div class="eventsLocation">
-                  <i class="fa-solid fa-location-dot"></i>
-                  218 New Elephant Road Dhaka
-                </div>
-
-                <p class="eventsDescription">
-                  Dratcaly novate fuly rarched an plication awesome theme
-                  education that plication creative theme education.
-                </p>
-
-                <button class="eventsJoinBtn">Join Now</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 2 -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="eventsCardBox">
-              <div class="eventsImageWrap">
-                <img src="./asset/images/event-2.png" />
-
-                <div class="eventsDateBadge">
-                  24
-                  <span>March</span>
-                </div>
-              </div>
-
-              <div class="eventsContentArea">
-                <h5 class="eventsTitle">Study Fastivel Event 2018</h5>
-
-                <div class="eventsTime">
-                  <i class="fa-regular fa-clock"></i>
-                  08:00 am - 10:00 am
-                </div>
-
-                <div class="eventsLocation">
-                  <i class="fa-solid fa-location-dot"></i>
-                  218 New Elephant Road Dhaka
-                </div>
-
-                <p class="eventsDescription">
-                  Dratcaly novate fuly rarched an plication awesome theme
-                  education that plication creative theme education.
-                </p>
-
-                <button class="eventsJoinBtn">Join Now</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 3 -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="eventsCardBox">
-              <div class="eventsImageWrap">
-                <img src="./asset/images/card-1.jpg" />
-
-                <div class="eventsDateBadge">
-                  24
-                  <span>March</span>
-                </div>
-              </div>
-
-              <div class="eventsContentArea">
-                <h5 class="eventsTitle">Study Fastivel Event 2018</h5>
-
-                <div class="eventsTime">
-                  <i class="fa-regular fa-clock"></i>
-                  08:00 am - 10:00 am
-                </div>
-
-                <div class="eventsLocation">
-                  <i class="fa-solid fa-location-dot"></i>
-                  218 New Elephant Road Dhaka
-                </div>
-
-                <p class="eventsDescription">
-                  Dratcaly novate fuly rarched an plication awesome theme
-                  education that plication creative theme education.
-                </p>
-
-                <button class="eventsJoinBtn">Join Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Upcoming Events section ends here -->
-    <!-- Newsletter section starts here -->
-    <section class="newsletter-area">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h3 class="newsletter-title">Join Our Newsletter</h3>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="d-flex newsletter-form">
-              <input
-                type="email"
-                class="form-control me-2"
-                id="newsletterEmail"
-                placeholder="Enter your e-mail here"
-                required
-              />
-
-              <button onclick="subscribeNewsletter()">Subscribe Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row g-4">
-          <!-- ABOUT -->
-
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">ALL STUDY</h5>
-
-            <p class="footer-text">
-              Distily enable team driven services through extensive
-              relationships platforms with interactive content. Enthusiastically
-              scale effective.
-            </p>
-
-            <ul class="footer-contact p-0">
-              <li>
-                <i class="fa-solid fa-location-dot"></i> New Chokoya Road, USA
-              </li>
-
-              <li>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+8801923970212">+8801 923 970 212</a>
-              </li>
-
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:admin@labartisan.com">admin@labartisan.com</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- LATEST NEWS -->
-
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Latest News</h5>
-
-            <div class="news-item">
-              <img src="./asset/images/n-1.jpg" />
-              <div>
-                <p class="mb-1">
-                  Corem ipsum dolor the amectetuer adipiscing...
-                </p>
-                <div class="news-date">08 February 2017</div>
-              </div>
-            </div>
-
-            <div class="news-item">
-              <img src="./asset/images/n-2.png" />
-              <div>
-                <p class="mb-1">
-                  Corem ipsum dolor the amectetuer adipiscing...
-                </p>
-                <div class="news-date">28 January 2017</div>
-              </div>
-            </div>
-
-            <div class="news-item">
-              <img src="./asset/images/n-3.jpg" />
-              <div>
-                <p class="mb-1">Duis autem iriure dolor in hendrerit...</p>
-                <div class="news-date">03 January 2017</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TWITTER -->
-
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Twitter Widget</h5>
-
-            <div class="twitter-post">
-              <i class="fa-brands fa-twitter"></i>
-              Raritas etiam processus them dynamicus sequitur mutatem education
-              theme
-              <div class="twitter-time">23 seconds ago</div>
-            </div>
-
-            <div class="twitter-post">
-              <i class="fa-brands fa-twitter"></i>
-              Duis autem vel eum iriure dolor hendrerit in vulputate
-              <div class="twitter-time">8 seconds ago</div>
-            </div>
-
-            <div class="twitter-post">
-              <i class="fa-brands fa-twitter"></i>
-              @frankdoe amber tempor cum soluta nobis eleifend
-              <div class="twitter-time">2 years ago</div>
-            </div>
-          </div>
-
-          <!-- RECENT PHOTOS -->
-
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Recent Photos</h5>
-
-            <div class="photo-grid">
-              <img src="./asset/images/n-4.png" />
-              <img src="./asset/images/n-5.jpg" />
-              <img src="./asset/images/n-6.png" />
-              <img src="./asset/images/n-7.jpg" />
-              <img src="./asset/images/n-8.png" />
-              <img src="./asset/images/n-9.jpg" />
-              <img src="./asset/images/n-10.png" />
-              <img src="./asset/images/n-11.jpg" />
-              <img src="./asset/images/n-1.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- COPYRIGHT -->
-    <div class="copyright-bar">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6  mb-3 mb-md-0">
-            © 2017. Designer By <span style="color: #f4a300">LabArtisan</span>
-          </div>
-
-          <div class="col-md-6 text-md-end social-icons">
-            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="google"><i class="fab fa-google"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Newsletter section ends here -->
+  </section>
+  <!-- Testimonial section ends here -->
+  <!-- University available section starts here -->
+  <section class="university-section text-center">
+    <div class="container">
+      <h2 class="section-title">University Available 24 /7</h2>
 
-    <script src="./asset/js/bootstrap.bundle.min.js"></script>
-    <script src="./asset/js/app.js"></script>
-  </body>
+      <p class="section-subtitle">
+        Rapidiously expedite granular imperatives before economically sound
+        web services. Credibly actualize pandemic strategic themplatform.
+      </p>
+
+      <div class="row align-items-center">
+        <!-- LEFT CONTACT INFO -->
+
+        <div class="col-lg-6">
+          <div class="row text-start">
+            <div class="col-md-6 contact-box">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <h5 class="contact-title">Address:</h5>
+              <p class="contact-text">
+                170/a Road 124, Sahara Melbourn<br />
+                New Sonarbangla Road Australia
+              </p>
+            </div>
+
+            <div class="col-md-6 contact-box">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <h5 class="contact-title">Email:</h5>
+              <p class="contact-text">
+                <a href="mailto:yourmail@domain.com">yourmail@domain.com</a><br />
+                <a href="mailto:houserent@domain.com">houserent@domain.com</a>
+              </p>
+            </div>
+
+            <div class="col-md-6 contact-box">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <h5 class="contact-title">Phone:</h5>
+              <p class="contact-text">
+                <a href="tel:990215469875">+99 0215469875</a><br />
+                <a href="tel:66635874692050">666 35874692050</a>
+              </p>
+            </div>
+
+            <div class="col-md-6 contact-box">
+              <i class="fa-solid fa-fax contact-icon"></i>
+              <h5 class="contact-title">Office Fax:</h5>
+              <p class="contact-text">
+                +555.123.333 456<br />
+                +555.123.333 456
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT MAP -->
+
+        <div class="col-lg-6">
+          <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=glasgow&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- University availabe section ends here -->
+
+  <!-- Upcoming Events section starts here -->
+  <section id="upcomingEventsBlock">
+    <div class="container">
+      <h2 class="eventsHeading">Our Upcoming Events</h2>
+
+      <p class="eventsParagraph">
+        Rapidiously expedite granular imperatives before economically sound
+        web services. Credibly actualize pandemic strategic themplatform.
+      </p>
+
+      <div class="row g-4">
+        <!-- CARD 1 -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="eventsCardBox">
+            <div class="eventsImageWrap">
+              <img src="./asset/images/card-1.jpg" />
+
+              <div class="eventsDateBadge">
+                24
+                <span>March</span>
+              </div>
+            </div>
+
+            <div class="eventsContentArea">
+              <h5 class="eventsTitle">Study Fastivel Event 2018</h5>
+
+              <div class="eventsTime">
+                <i class="fa-regular fa-clock"></i>
+                08:00 am - 10:00 am
+              </div>
+
+              <div class="eventsLocation">
+                <i class="fa-solid fa-location-dot"></i>
+                218 New Elephant Road Dhaka
+              </div>
+
+              <p class="eventsDescription">
+                Dratcaly novate fuly rarched an plication awesome theme
+                education that plication creative theme education.
+              </p>
+
+              <button class="eventsJoinBtn">Join Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="eventsCardBox">
+            <div class="eventsImageWrap">
+              <img src="./asset/images/event-2.png" />
+
+              <div class="eventsDateBadge">
+                24
+                <span>March</span>
+              </div>
+            </div>
+
+            <div class="eventsContentArea">
+              <h5 class="eventsTitle">Study Fastivel Event 2018</h5>
+
+              <div class="eventsTime">
+                <i class="fa-regular fa-clock"></i>
+                08:00 am - 10:00 am
+              </div>
+
+              <div class="eventsLocation">
+                <i class="fa-solid fa-location-dot"></i>
+                218 New Elephant Road Dhaka
+              </div>
+
+              <p class="eventsDescription">
+                Dratcaly novate fuly rarched an plication awesome theme
+                education that plication creative theme education.
+              </p>
+
+              <button class="eventsJoinBtn">Join Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="col-lg-4 col-md-6">
+          <div class="eventsCardBox">
+            <div class="eventsImageWrap">
+              <img src="./asset/images/card-1.jpg" />
+
+              <div class="eventsDateBadge">
+                24
+                <span>March</span>
+              </div>
+            </div>
+
+            <div class="eventsContentArea">
+              <h5 class="eventsTitle">Study Fastivel Event 2018</h5>
+
+              <div class="eventsTime">
+                <i class="fa-regular fa-clock"></i>
+                08:00 am - 10:00 am
+              </div>
+
+              <div class="eventsLocation">
+                <i class="fa-solid fa-location-dot"></i>
+                218 New Elephant Road Dhaka
+              </div>
+
+              <p class="eventsDescription">
+                Dratcaly novate fuly rarched an plication awesome theme
+                education that plication creative theme education.
+              </p>
+
+              <button class="eventsJoinBtn">Join Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events section ends here -->
+  <!-- Newsletter section starts here -->
+  <section class="newsletter-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h3 class="newsletter-title">Join Our Newsletter</h3>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="d-flex newsletter-form">
+            <input type="email" class="form-control me-2" id="newsletterEmail" placeholder="Enter your e-mail here"
+              required />
+
+            <button onclick="subscribeNewsletter()">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- ABOUT -->
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">ALL STUDY</h5>
+
+          <p class="footer-text">
+            Distily enable team driven services through extensive
+            relationships platforms with interactive content. Enthusiastically
+            scale effective.
+          </p>
+
+          <ul class="footer-contact p-0">
+            <li>
+              <i class="fa-solid fa-location-dot"></i> New Chokoya Road, USA
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+8801923970212">+8801 923 970 212</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:admin@labartisan.com">admin@labartisan.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- LATEST NEWS -->
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Latest News</h5>
+
+          <div class="news-item">
+            <img src="./asset/images/n-1.jpg" />
+            <div>
+              <p class="mb-1">
+                Corem ipsum dolor the amectetuer adipiscing...
+              </p>
+              <div class="news-date">08 February 2017</div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <img src="./asset/images/n-2.png" />
+            <div>
+              <p class="mb-1">
+                Corem ipsum dolor the amectetuer adipiscing...
+              </p>
+              <div class="news-date">28 January 2017</div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <img src="./asset/images/n-3.jpg" />
+            <div>
+              <p class="mb-1">Duis autem iriure dolor in hendrerit...</p>
+              <div class="news-date">03 January 2017</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TWITTER -->
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Twitter Widget</h5>
+
+          <div class="twitter-post">
+            <i class="fa-brands fa-twitter"></i>
+            Raritas etiam processus them dynamicus sequitur mutatem education
+            theme
+            <div class="twitter-time">23 seconds ago</div>
+          </div>
+
+          <div class="twitter-post">
+            <i class="fa-brands fa-twitter"></i>
+            Duis autem vel eum iriure dolor hendrerit in vulputate
+            <div class="twitter-time">8 seconds ago</div>
+          </div>
+
+          <div class="twitter-post">
+            <i class="fa-brands fa-twitter"></i>
+            @frankdoe amber tempor cum soluta nobis eleifend
+            <div class="twitter-time">2 years ago</div>
+          </div>
+        </div>
+
+        <!-- RECENT PHOTOS -->
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Recent Photos</h5>
+
+          <div class="photo-grid">
+            <img src="./asset/images/n-4.png" />
+            <img src="./asset/images/n-5.jpg" />
+            <img src="./asset/images/n-6.png" />
+            <img src="./asset/images/n-7.jpg" />
+            <img src="./asset/images/n-8.png" />
+            <img src="./asset/images/n-9.jpg" />
+            <img src="./asset/images/n-10.png" />
+            <img src="./asset/images/n-11.jpg" />
+            <img src="./asset/images/n-1.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- COPYRIGHT -->
+  <div class="copyright-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6  mb-3 mb-md-0">
+          © 2017. Designer By <span style="color: #f4a300">LabArtisan</span>
+        </div>
+
+        <div class="col-md-6 text-md-end social-icons">
+          <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="google"><i class="fab fa-google"></i></a>
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Newsletter section ends here -->
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="./asset/js/bootstrap.bundle.min.js"></script>
+  <script src="./asset/js/app.js"></script>
+</body>
+
 </html>

@@ -305,3 +305,86 @@ window.addEventListener("load", () => {
     console.log("Map Loaded Successfully");
 
 });
+
+
+// customise js starts here
+
+// INIT EMAILJS
+emailjs.init("UO04Ip6crvSsvHp57");
+
+let popup = document.getElementById("lp-popup");
+let form = document.getElementById("lp-form");
+let name = document.getElementById("lp-name");
+let email = document.getElementById("lp-email");
+let msg = document.getElementById("lp-msg");
+let loader = document.getElementById("lp-loader");
+let btnText = document.getElementById("lp-btnText");
+
+// SHOW POPUP
+setTimeout(()=> popup.style.display="block",10000);
+
+// CLOSE
+document.querySelector(".lp-close").onclick = ()=> popup.style.display="none";
+
+// PATTERN
+let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+// REAL TIME
+name.addEventListener("input", ()=>{
+    name.classList.toggle("lp-error", name.value.trim()==="");
+    name.classList.toggle("lp-success", name.value.trim()!=="");
+});
+
+email.addEventListener("input", ()=>{
+    email.classList.toggle("lp-success", emailPattern.test(email.value));
+    email.classList.toggle("lp-error", !emailPattern.test(email.value));
+});
+
+
+
+let phone = document.getElementById("lp-phone");
+
+// Pattern for 10 digits
+let phonePattern = /^[0-9]{10}$/;
+
+// Real-time validation
+phone.addEventListener("input", ()=>{
+    phone.classList.toggle("lp-success", phonePattern.test(phone.value));
+    phone.classList.toggle("lp-error", !phonePattern.test(phone.value));
+});
+
+// SUBMIT
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    if(name.value.trim()===""){
+        msg.innerText="Enter name ❌";
+        return;
+    }
+
+    if(!emailPattern.test(email.value)){
+        msg.innerText="Enter valid email ❌";
+        return;
+    }
+    if(!phonePattern.test(phone.value)){
+        msg.innerText = "Enter valid 10-digit phone ❌";
+        return;
+    }
+
+    loader.style.display="inline-block";
+    btnText.innerText="Sending...";
+
+    emailjs.send("service_9rjx9m9","template_ldtu6db",{
+        user_name:name.value,
+        user_email:email.value,
+        user_phone: phone.value
+    }).then(()=>{
+        msg.innerText="Sent ✅";
+        setTimeout(()=> window.location.href="thank-you.html",1500);
+    });
+});
+
+// SCROLL TOP
+let btn = document.getElementById("lp-scrollTop");
+window.onscroll = ()=> btn.style.display = window.scrollY>100 ? "block":"none";
+btn.onclick = ()=> window.scrollTo({top:0,behavior:"smooth"});
